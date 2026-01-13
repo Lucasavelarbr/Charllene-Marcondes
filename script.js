@@ -4,6 +4,10 @@ const navList = document.getElementById('nav-list')
 menuToggle.addEventListener("click", (e) =>{
     e.stopPropagation()
     navList.classList.toggle("active")
+    menuToggle.classList.toggle("active")
+
+    const isOpen = navList.classList.contains("active");
+    menuToggle.setAttribute("aria-expanded", isOpen);
 })
 
 // Fecha o menu ao clicar fora
