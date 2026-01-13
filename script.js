@@ -1,41 +1,64 @@
 const menuToggle = document.getElementById('menu-toggle');
 const navList = document.getElementById('nav-list')
 const overlay = document.getElementById("overlay")
-const body = document.body;
+
+const openMenu = () =>{
+    navList.classList.add("active")
+    menuToggle.classList.add("active")
+    overlay.classList.add("active")
+    menuToggle.setAttribute("aria-expanded", "true")
+}
+
+const closeMenu = () =>{
+    navList.classList.remove("active")
+    menuToggle.classList.remove("active")
+    overlay.classList.remove("active")
+    menuToggle.setAttribute("aria-expanded", "true")
+}
+
+// click do botão Menu
 
 menuToggle.addEventListener("click", (e) =>{
     e.stopPropagation()
-    navList.classList.toggle("active")
-    menuToggle.classList.toggle("active")
-    overlay.classList.toggle("active")
 
-    
+    const isOpen = navList.classList.contains("active")
 
-    const isOpen = navList.classList.contains("active");
-    menuToggle.setAttribute("aria-expanded", isOpen);
+    if(isOpen){
+        closeMenu()
+    }else{
+        openMenu()
+    }
+}) 
+
+// fechar com o ESC
+
+document.addEventListener("keydown", (e) =>{
+    if(e.key === "Escape"){
+        closeMenu()
+    }
 })
 
-// Fecha o menu ao clicar fora
+// Clicar fora
+
 document.addEventListener("click", (e) =>{
-    const ClickFora = navList.contains(e.target)
-    const ClickBotao = menuToggle.contains(e.target)
+    const ClicknoMenu = navList.contains(e.targget)
+    const ClicknoBotao = menuToggle.contains(e.targget)
 
-    if (!ClickBotao && !ClickFora) {
-        navList.classList.remove("active")
+    if(!ClicknoBotao && !ClicknoMenu){
+        closeMenu()
     }
 })
 
-//  Fecha o menu ao apertar o Esc
-document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape"){
-        navList.classList.remove("active")
-    }
-})
+// clique nos links
 
-// Fecha ao clicar nos links do Menu
-
-navList.querySelectorAll("a").forEach(link =>{
+document.querySelectorAll("a").forEach(link =>{
     link.addEventListener("click", () =>{
-        navList.classList.remove("active")
+        closeMenu()
     })
+})
+
+// overlay
+
+overlay.addEventListener("click", () =>{
+    closeMenu()
 })
