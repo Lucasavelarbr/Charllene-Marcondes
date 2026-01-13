@@ -215,6 +215,7 @@ button, a{
     display: inline-block;
     background-color: var(--title-main);
     color: var(--bg-main);
+    font-weight: bold;
     padding: 10px;
     text-decoration: none;
     font-size: 1.2rem;
@@ -227,6 +228,47 @@ button, a{
     outline-offset: 10px;
     border-radius: 4px;
 }
+
+.sobre{
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.5;
+}
+
+.sobre h2{
+    font-size: 1.7rem;
+    margin: 50px 0;
+    text-align: center;
+    color: var(--title-main);
+    position: relative;
+}
+
+.sobre h2::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: var(--title-main);
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+.sobre img{
+    width: 120px;
+    height: auto;
+    float: left;
+    margin-right: 25px;
+    background-color: var(--bg-main);
+    box-shadow: 0 0 10px -5px var(--text-muted);
+    border-radius: 20px 5px 5px 20px;
+}
+
+.sobre p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 
 
 
