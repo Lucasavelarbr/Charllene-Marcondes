@@ -33,6 +33,11 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
+body.no-scroll{
+    overflow: hidden;
+    height: 100vh;
+}
+
 button, a{
     -webkit-tap-highlight-color: transparent;
 }
@@ -43,7 +48,12 @@ button, a{
     justify-content: space-around;
     flex-direction: column;
     padding: 1rem;
-    position: relative;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: var(--bg-card);
+    z-index: 5;
 }
 
 /* botão - menu */
@@ -137,6 +147,22 @@ button, a{
     border-radius: 4px;
 }
 
+/* Fundo escurinho */
+.overlay{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.overlay.active{
+    opacity: 1;
+    visibility: visible;
+    z-index: 4;
+}
+
 .hero-site{
     display: flex;
     justify-content: center;
@@ -153,7 +179,7 @@ button, a{
     border-radius: 15px 50px;
     object-fit: cover;
     display: block;
-    margin: auto;
+    margin: 20px auto;
     box-shadow: 0 0 30px -10px var(--text-muted);
 }
 
