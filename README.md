@@ -1,5 +1,7 @@
 # 🌱 Charllene Marcondes – Psicopedagogia & Terapia ABA
 
+https://lucasavelarbr.github.io/Charllene-Marcondes/
+
 Site institucional desenvolvido para a psicopedagoga **Charllene Marcondes**, com foco em acolhimento, clareza das informações e acessibilidade.  
 O projeto apresenta os serviços voltados ao desenvolvimento infantil, como Psicopedagogia, Terapia ABA, TDAH, TEA e Dislexia.
 
@@ -64,3 +66,5 @@ O projeto segue boas práticas de acessibilidade, incluindo:
 ├── IMG/
 │   ├── logo.png
 │   └── psicopedagogia-charllene-marcondes-aprendizado-infantil.png
+
+https://lucasavelarbr.github.io/Charllene-Marcondes/
