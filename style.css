@@ -269,6 +269,121 @@ button, a{
     font-weight: 300;
 }
 
+.carrocel-tittle{
+    font-size: 1.7rem;
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    color: var(--title-main);
+}
+
+.carrocel-tittle::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background-color: var(--title-main);
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+.carrocel{
+    position: relative;
+    max-width: 85%;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+
+.carrocel-track{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.card{
+    max-width: 100%;
+    background-color: var(--bg-main);
+    color: var(--title-secondary);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px -5px var(--text-muted);
+    margin: 50px auto;
+}
+
+.card h3{
+    margin: 1.5rem 0
+}
+
+.card p{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.carrocel-control{
+    position: absolute;
+    top: 62%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    color: var(--title-main);
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.carrocel-control.prev{
+    left: -10px;
+}
+
+.carrocel-control.next{
+    right: -10px;
+}
+
+.carrocel-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    gap: 20px;
+}
+
+.carrocel-dots button{
+    width: 12px;
+    height: 12px;
+    min-width: 10px;
+    min-height: 10px;
+    border-radius: 50%;
+    border: 2px solid #2e7d32;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-size: 0;
+    line-height: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrocel-dots button[aria-current="true"] {
+    opacity: 1;
+}
+
+.carrocel-dots button[aria-current="true"] {
+  background: var(--title-main);
+}
 
 
 
