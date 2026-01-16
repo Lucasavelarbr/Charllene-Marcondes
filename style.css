@@ -275,7 +275,7 @@ button, a{
 .areas li{
     position: relative;
     line-height: 3.4;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: bold;
     color: var(--primary-hover);
 }
@@ -291,7 +291,7 @@ button, a{
 }
 
 .sobre-areas img{
-    width: 150px;
+    width: 130px;
     height: auto;
     margin-right: 25px;
     background-color: var(--bg-main);

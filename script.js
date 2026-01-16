@@ -166,7 +166,7 @@ track.addEventListener("touchmove", (e) =>{
 track.addEventListener("touchend", (e) => {
   const distance = startX - endX
 
-  if(Math.abs(distance) < swape) return;
+  if(Math.abs(distance) < swipe) return;
 
   if(distance > 0){
     index++;
