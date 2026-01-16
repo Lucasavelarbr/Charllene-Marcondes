@@ -150,3 +150,29 @@ track.addEventListener("transitionend", () => {
     track.style.transform = `translateX(-${getWidth() * index}px)`;
   }
 });
+
+let startX = 0;
+let endX = 0;
+const swipe = 50;
+
+track.addEventListener("touchstart", (e) => {
+  startX = e.touches[0].clientX
+})
+
+track.addEventListener("touchmove", (e) =>{
+  endX = e.touches[0].clientX
+})
+
+track.addEventListener("touchend", (e) => {
+  const distance = startX - endX
+
+  if(Math.abs(distance) < swape) return;
+
+  if(distance > 0){
+    index++;
+    move()
+  }else{
+    index--;
+    move()
+  }
+})
