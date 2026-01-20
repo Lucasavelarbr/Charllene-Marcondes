@@ -45,6 +45,9 @@ button, a{
     -webkit-tap-highlight-color: transparent;
 }
 
+/* =========================================================== */
+
+/* HEADER */
 .navbar{
     display: flex;
     align-items: center;
@@ -150,7 +153,7 @@ button, a{
     border-radius: 4px;
 }
 
-/* Fundo escurinho */
+/* FUNDO ESCURO - OVERLAY */
 .overlay{
     position: fixed;
     inset: 0;
@@ -166,6 +169,9 @@ button, a{
     z-index: 4;
 }
 
+/* ========================================================================== */
+
+/* HERO SITE */
 .hero-site{
     display: flex;
     justify-content: center;
@@ -283,7 +289,7 @@ button, a{
 .areas li::before{
     content: "•";
     position: absolute;
-    left: -25%;              /* cola no início da lista */
+    left: -25%;             
     top: 50%;
     transform: translateY(-50%);
     color: var(--primary-hover);
@@ -336,6 +342,9 @@ button, a{
     border-radius: 4px;
 }
 
+/* ======================================================================= */
+
+/* ÁREA DO CARROCEL DE CARDS */
 .carrocel-tittle{
     font-size: 1.7rem;
     text-align: center;
@@ -465,8 +474,10 @@ button, a{
     border-radius: 4px;
 }
 
-/* Grid - Espaço */
 
+/* ======================================================================= */
+
+/* CARROCEL DE IMAGENS */
 .espaço{
     padding: 4rem 1rem;
 }
@@ -617,9 +628,10 @@ button, a{
 
 .copy{
     margin-top: 10px;
-    font-size: .8rem;
+    font-size: .7rem;
     border-top: 1px solid var(--bg-card);
     padding-top: 1rem;
+    text-align: center;
 }
 
 

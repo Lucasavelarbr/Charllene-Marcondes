@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página de Charllene Marvcondes - Psicopedagoga.">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="style-principal.css">
+    <link rel="stylesheet" href="style-sobre.css">
+    <link rel="stylesheet" href="AUTISMO.css">
+
+    <!-- Icones-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="Responsivo.css">
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <title>AUTISMO</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar" aria-label="Navegação Principal">
+            <img src="IMG/logo.png" class="logo" alt="Logo com cérebro e folhas em tons de verde e azul">
+
+            <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-list"
+                aria-label="Abrir menu de navegação">
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+                <span class="bar" aria-hidden="true"></span>
+            </button>
+
+            <ul class="nav-list" id="nav-list">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="TDAH.html">TDAH</a></li>
+                <li><a href="AUTISMO.html">Autismo</a></li>
+                <li><a href="#">Dislexia</a></li>
+                <li><a href="#">TEA - TOD</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+
+    <section class="autismo-section" id="autismo" aria-labelledby="título-autismo">
+        <figure class="autismo-image">
+            <img src="IMG/AUTISMO.jpg" alt="Ilustração de uma criança sorrindo, com cabelo cacheado roxo, em um ambiente colorido e acolhedor, 
+            representando o autismo de forma positiva" loading="lazy" decoding="async">
+
+            <figcaption class="sr-only">
+                Representação ilustrada e acolhedora do Transtorno do Espectro Autista
+            </figcaption>
+        </figure>
+
+        <H1 class="autismo-tittle">AUTISMO</H1>
+
+        <article class="texto">
+            <p>
+                Pessoas autistas podem perceber sons, luzes, cheiros e toques
+                de forma mais intensa. Alguns comportamentos ajudam a trazer
+                conforto, segurança e organização emocional.
+            </p>
+
+            <p>
+                O mais importante é <span>respeito, empatia e informação.</span>
+                Ambientes acolhedores fazem toda a diferença.
+            </p>
+        </article>
+    </section>
+
+    <section aria-labelledby="cards-info" class="cards">
+        <h3 id="cards-info">Perguntas e Respostas</h3>
+
+        <ul class="cards-lista" role="list">
+            <li class="card" tabindex="0">
+                <h4>O que é o autismo?</h4>
+                <p>
+                    O autismo é uma condição do neurodesenvolvimento
+                    que influencia a comunicação, o comportamento
+                    e a forma de perceber o mundo.
+                </p>
+            </li>
+
+            <li class="card" tabindex="0">
+                <h4>Todas as pessoas autistas são iguais?</h4>
+                <p>
+                    Não. O autismo é um espectro.
+                    Cada pessoa tem habilidades, desafios
+                    e necessidades diferentes.
+                </p>
+            </li>
+
+            <li class="card" tabindex="0">
+                <h4>Autismo tem cura?</h4>
+                <p>
+                    Não. O autismo não é uma doença.
+                    Com apoio adequado, a pessoa pode se desenvolver
+                    e ter qualidade de vida.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section aria-labelledby="cards-curiosidades" class="cards">
+        <h3 id="cards-curiosidades">Curiosidades</h3>
+
+        <ul class="cards-lista" role="list">
+            <li class="card" tabindex="0">
+                <h4>Autistas sentem emoções?</h4>
+                <p>
+                    Sim! Muitas vezes sentem emoções de forma intensa.
+                    A diferença pode estar na forma de expressar.
+                </p>
+            </li>
+
+            <li class="card" tabindex="0">
+                <h4>Sensibilidade sensorial</h4>
+                <p>
+                    Sons altos, luz forte ou certos tecidos
+                    podem causar desconforto em algumas pessoas autistas.
+                </p>
+            </li>
+
+            <li class="card" tabindex="0">
+                <h4>Símbolo do autismo</h4>
+                <p>
+                    O infinito colorido representa diversidade,
+                    inclusão e singularidade.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+            <div class="footer-container">
+                <div class="footer-info">
+                    <p>📍 Av. Dr. Carlos de Moraes Barros, 343 - 2º andar<br>
+                        Vila Campesina, Osasco - SP, 06023-000</p>
+
+                    <p>📞 <a href="tel:+5511912665076">(11) 91266-5076</a></p>
+                    <p> Segunda à Sexta:
+                        ⏰ Das 17:00 às 20:00
+                    </p>
+                    <p> Sábados:
+                        ⏰ Das 10:00 às 14:00
+                    </p>    
+                </div>
+
+                <p class="copy">&copy; 2026 Cjarllene Marcondes. Todos os direitos reservados.</p>
+            </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
