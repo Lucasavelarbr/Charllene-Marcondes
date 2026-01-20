@@ -115,7 +115,7 @@ button, a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 50%;
+    width: 60%;
     height: 100vh;
     background-color: var(--bg-main);
     list-style-type: none;
@@ -126,7 +126,7 @@ button, a{
 }
 
 .nav-list li{
-    margin: 100px 30px;
+    margin: 100px 40px;
 }
 
 .nav-list a{
@@ -571,73 +571,37 @@ button, a{
   border-radius: 4px;
 }
 
-.footer-container{
-    width: 100vw;
-    background-color: var(--title-main);
-    color: var(--bg-card);
-    margin: 0 auto;
-    padding: 2.5rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.footer {
+  background-color: #3e8e2d;
+  color: #fff;
 }
 
-
-.footer-info h4{
-    font-size: 1.2rem;
-    text-align: center;
-    font-weight: 800;
+/* 🔼 TOPO: duas colunas */
+.footer-top {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
-.footer-role::after{
-    content: "";
-    display: block;
-    width: 60px;
-    height: 2px;
-    background-color: var(--bg-card);
-    margin: 12px auto 0;
-    border-radius: 2px;
-}
-
-.footer-role {
-  display: block;
+/* endereço */
+.footer-address {
   font-size: 0.95rem;
-  opacity: 0.9;
-  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* telefone */
+.footer-phone a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  width: 100%;
+  border-top: 2px solid var(--bg-main);
+  padding: 1rem;
   text-align: center;
+  font-size: 0.85rem;
 }
-
-.footer-info p{
-   line-height: 1.5;
-   font-size: .90rem;
-   margin-bottom: .5rem;
-   text-align: center;
-}
-
-.footer-info a{
-    color: var(--bg-card);
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.footer-info a:focus-visible{
-    outline: 3px solid var(--bg-card);
-    outline-offset: 4px;
-    border-radius: 4px;
-}
-
-.copy{
-    margin-top: 10px;
-    font-size: .7rem;
-    border-top: 1px solid var(--bg-card);
-    padding-top: 1rem;
-    text-align: center;
-}
-
-
-
-
-
-
-
-
