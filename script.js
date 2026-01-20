@@ -176,3 +176,74 @@ track.addEventListener("touchend", (e) => {
     move()
   }
 })
+
+// CARROCEL DE IMAGENS
+
+const trackGaleria = document.querySelector(".galeria-track");
+const slide = Array.from(trackGaleria.children); 
+const prevBtnGaleria = document.querySelector(".galeria-btn.prev");
+const nextBtnGaleria = document.querySelector(".galeria-btn.next");
+
+let galeriaIndex = 0;
+const galeriaGap = 25;
+
+function updateGaleria() {
+    // 1. Alterna as classes visuais
+    slide.forEach((item, i) => {
+        item.classList.remove("active", "side");
+        if (i === galeriaIndex) {
+            item.classList.add("active");
+        } else {
+            item.classList.add("side");
+        }
+    });
+
+    // 2. Calcula o deslocamento para centralizar o slide atual
+    const containerWidth = document.querySelector('.galeria-fotos').offsetWidth;
+    const itemWidth = slide[0].offsetWidth;
+    
+    // Offset para centralizar: (Largura do container - largura do card) / 2
+    const centerOffset = (containerWidth - itemWidth) / 2;
+    const totalTranslate = (galeriaIndex * (itemWidth + galeriaGap)) - centerOffset;
+
+    trackGaleria.style.transform = `translateX(${-totalTranslate}px)`;
+}
+
+// Eventos de Clique
+nextBtnGaleria.addEventListener("click", () => {
+    if (galeriaIndex < slide.length - 1) {
+        galeriaIndex++;
+        updateGaleria();
+    } else {
+        galeriaIndex = 0; // Opcional: Volta ao início
+        updateGaleria();
+    }
+});
+
+prevBtnGaleria.addEventListener("click", () => {
+    if (galeriaIndex > 0) {
+        galeriaIndex--;
+        updateGaleria();
+    } else {
+        galeriaIndex = slide.length - 1; // Opcional: Vai ao final
+        updateGaleria();
+    }
+});
+
+// Suporte para Touch (Swipe no celular)
+let touchInicioX = 0;
+trackGaleria.addEventListener("touchstart", e => touchInicioX = e.touches[0].clientX);
+trackGaleria.addEventListener("touchend", e => {
+    const touchFimX = e.changedTouches[0].clientX;
+    const diferenca = touchInicioX - touchFimX;
+
+    if (Math.abs(diferenca) > 50) { // Sensibilidade do deslize
+        if (diferenca > 0 && galeriaIndex < slide.length - 1) galeriaIndex++;
+        else if (diferenca < 0 && galeriaIndex > 0) galeriaIndex--;
+        updateGaleria();
+    }
+});
+
+// Inicialização e Responsividade
+window.addEventListener("load", updateGaleria);
+window.addEventListener("resize", updateGaleria);

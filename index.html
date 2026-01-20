@@ -7,7 +7,8 @@
     <meta name="description" content="Página de Charllene Marvcondes - Psicopedagoga.">
 
     <!-- Links -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-principal.css">
+    <link rel="stylesheet" href="style-sobre.css">
 
     <!-- Icones-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -36,7 +37,7 @@
             </button>
 
             <ul class="nav-list" id="nav-list">
-                <li><a href="#">Sobre Charllene</a></li>
+                <li><a href="index.html">Início</a></li>
                 <li><a href="#">TDAH</a></li>
                 <li><a href="#">Autismo</a></li>
                 <li><a href="#">Dislexia</a></li>
@@ -97,7 +98,7 @@
                         class="bi bi-instagram"></i></a>
             </div>
 
-            <a href="#" target="_blank" rel="noopener noreferrer" class="btn-sobre">Sobre Charllene</a>
+            <a href="sobre.html" rel="noopener noreferrer" class="btn-sobre">Sobre Charllene</a>
 
         </section>
 
@@ -153,34 +154,52 @@
             <div class="nosso-espaço">
                 <h3 id="espaco-titulo">Nosso espaço</h3>
 
-                <div class="grid-fotos">
-                    <div class="grid-fotos">
-                        <figure>
-                            <img src="IMG/espaço-1.jpg"
-                                alt="Sala de atendimento com sofá claro, duas poltronas estofadas e iluminação suave, criando um ambiente acolhedor e tranquilo."
-                                loading="lazy">
+                <div class="galeria-fotos">
+
+                    <button class="galeria-btn prev" aria-label="Foto anterior">‹</button>
+
+                    <div class="galeria-track">
+                        <figure class="slide">
+                            <img src="IMG/espaço-1.jpg" alt="Sala de atendimento com sofá claro." loading="lazy">
                         </figure>
 
-                        <figure>
-                            <img src="IMG/espaço-2.jpg"
-                                alt="Sala lúdica infantil com tapete colorido de EVA, mesa pequena com cadeiras, prateleiras com brinquedos e decoração em tons suaves."
-                                loading="lazy">
+                        <figure class="slide">
+                            <img src="IMG/espaço-2.jpg" alt="Sala lúdica infantil." loading="lazy">
                         </figure>
 
-                        <figure>
-                            <img src="IMG/espaço-3.jpg"
-                                alt="Consultório com duas poltronas confortáveis, mesa lateral, prateleiras de madeira decorativas e iluminação indireta."
-                                loading="lazy">
+                        <figure class="slide">
+                            <img src="IMG/espaço-3.jpg" alt="Consultório confortável." loading="lazy">
                         </figure>
 
-                        <figure>
-                            <img src="IMG/espaço-4.jpg"
-                                alt="Recepção com balcão iluminado, poltronas alinhadas para espera, sofá confortável e decoração em tons neutros e naturais."
-                                loading="lazy">
+                        <figure class="slide">
+                            <img src="IMG/espaço-4.jpg" alt="Recepção com decoração neutra." loading="lazy">
                         </figure>
                     </div>
+
+                    <button class="galeria-btn next" aria-label="Próxima foto">›</button>
+
                 </div>
         </section>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-info">
+                   
+                    <p>📍 Av. Dr. Carlos de Moraes Barros, 343 - 2º andar<br>
+                        Vila Campesina, Osasco - SP, 06023-000</p>
+
+                    <p>📞 <a href="tel:+5511912665076">(11) 91266-5076</a></p>
+                    <p> Segunda à Sexta:
+                        ⏰ Das 17:00 às 20:00
+                    </p>
+                    <p> Sábados:
+                        ⏰ Das 10:00 às 14:00
+                    </p>    
+                </div>
+
+                <p class="copy">&copy; 2026 Cjarllene Marcondes. Todos os direitos reservados.</p>
+            </div>
+        </footer>
     </main>
 
     <script src="script.js"></script>
