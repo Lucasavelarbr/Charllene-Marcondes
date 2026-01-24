@@ -1,0 +1,248 @@
+:root {
+    /* Backgrounds */
+    --bg-main: #f8f9fa;
+    --bg-card: #ffffff;
+    --bg-footer: #5a9db7;
+
+    /* Brand / Ação */
+    --primary: #62A1BB;
+    --primary-hover: #4f8ea6;
+
+    /* Títulos */
+    --title-main: #4f7f12;
+    --title-secondary: #6fa83a;
+
+    /* Texto */
+    --text-main: #333333;
+    --text-muted: #6c757d;
+
+    /* Estados */
+    --success: #7bbf6a;
+    --focus: #9fd3e5;
+
+    /* box shadow */
+    --box-shadow: 0 0 10px -5px var(--text-muted);
+}
+
+@media (min-width: 720px) and (max-width: 919px) {
+    .logo {
+        width: 90px;
+        height: 70px;
+        position: fixed;
+        top: 30px;
+        right: 40px;
+    }
+
+    .navbar {
+        height: 90px;
+    }
+
+    .nav-list {
+        width: 40%;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 35px;
+        position: fixed;
+        top: 30px;
+        left: 50px;
+    }
+
+    .menu-toggle.active .bar:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+    }
+
+    .menu-toggle.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+
+    .menu-toggle.active .bar:nth-child(3) {
+        transform: translateY(-21px) rotate(-45deg);
+    }
+
+
+    .nav-list li {
+        margin: 120px 35px;
+    }
+
+    .nav-list a {
+        font-size: 1.3rem;
+    }
+
+    /* Àrea do Principal - INÍCIO */
+
+    .hero-image img{
+        width: 55%;
+        height: auto;
+        margin: 40px auto;
+        border-radius: 20px 90px;
+        box-shadow: 0 0 40px -20px var(--text-muted);
+    }
+
+    .hero-content h1{
+        font-size: 2.5rem;
+        max-width: 95%
+    }   
+
+    .hero-content p{
+        font-size: 1.6rem;
+        max-width: 80%;
+        text-align: justify;
+        hyphens: auto;
+        margin-bottom: 60px;
+    }
+
+    .hero-button{
+        font-size: 1.8rem;
+        padding: 10px 20px;
+    }
+
+    .sobre h2{
+        font-size: 2.5rem;
+    }
+
+    .sobre h2::after{
+        display: block;
+        width: 120px;
+        height: 3px;
+    }
+
+    .sobre-areas img{
+        width: 250px;
+        height: auto;
+        margin-right: 25px;
+        margin-top: 40px;
+        border-radius: 40px 10px 10px 40px;
+        box-shadow: 0 0 50px -20px var(--text-muted);
+    }
+
+    .areas li{
+        position: relative;
+        line-height: 4.4;
+        font-size: 1.5rem;
+        margin-left: 80px;
+        margin-top: 10px;
+
+    }
+
+    .btn-sobre{
+        max-width: 50%;
+        display: block;
+        margin: 20px auto;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+
+    .redes-sociais{
+        font-size: 2.8rem;
+    }
+
+    .carrocel-tittle{
+        font-size: 2.5rem;
+        margin-top: 100px;
+    }
+
+    .carrocel-tittle::after{
+        display: block;
+        width: 120px;
+        height: 3px;
+    }
+
+     .carrocel{
+        max-width: 80%;
+    }
+    .card{
+        max-width: 80%;
+        border-radius: 30px 90px;
+    }
+
+    .card h3{
+        font-size: 1.6rem;
+    }
+
+    .card p{
+        font-size: 1.4rem;
+    }
+
+    .nosso-espaço h3{
+        font-size: 2.5rem;
+        margin: 100px auto;
+    }
+
+    .nosso-espaço h3::after{
+        display: block;
+        width: 120px;
+        height: 3px;
+    }
+
+    .galeria-fotos{
+        max-width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .slide img{
+        max-width: 80%;
+        border-radius: 20px 90px;
+        margin-bottom: 100px;
+    }
+
+    .galeria-btn{
+        background-color: transparent;
+    }
+
+    .footer-address p{
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    .footer-phone{
+        margin-top: 1.3rem;
+        margin-bottom: -1rem;
+    }
+
+    .footer-bottom{
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 920px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 70px;
+        width: 100%;
+        transform: none;
+        background-color: var(--bg-main);
+    }
+
+    .nav-list a {
+        font-size: 1rem;
+    }
+
+    .nav-list a:hover {
+        text-decoration: underline;
+        color: var(--title-secondary);
+    }
+
+    .logo {
+        position: fixed;
+        top: 10px;
+        left: 20px;
+    }
+}

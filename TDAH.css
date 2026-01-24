@@ -28,6 +28,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .tdah-section{
@@ -43,7 +45,7 @@
 }
 
 .tdah-image img{
-    width: 100%;
+    width: 85%;
     height: auto;
     margin-top: 50px;
     border-radius: 15px 50px;
@@ -111,8 +113,9 @@
 /* Card */
 .card {
     background-color: var(--bg-main);
-    border-radius: 12px;
+    border-radius: 15px 50px;
     padding: 1.5rem;
+    max-width: 85%;
     box-shadow: 0 0 10px -5px var(--text-main);
 }
 

@@ -26,6 +26,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .sobre{
     max-width: 90%;
     margin: 0 auto;

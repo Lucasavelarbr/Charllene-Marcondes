@@ -126,7 +126,7 @@ button, a{
 }
 
 .nav-list li{
-    margin: 80px 40px;
+    margin: 85px 35px;
 }
 
 .nav-list a{
@@ -365,7 +365,7 @@ button, a{
 
 .carrocel{
     position: relative;
-    max-width: 85%;
+    max-width: 80%;
     margin: 1rem auto;
     overflow: hidden;
 }
@@ -383,16 +383,17 @@ button, a{
 .card{
     max-width: 100%;
     background-color: var(--bg-main);
-    color: var(--title-secondary);
     padding: 1.5rem;
-    border-radius: 10px;
+    border-radius: 15px;
     text-align: center;
     box-shadow: 0 0 10px -5px var(--text-muted);
     margin: 50px auto;
 }
 
 .card h3{
-    margin: 1.5rem 0
+    margin: 1.5rem 0;
+    color: var(--title-main);
+    font-weight: bold;
 }
 
 .card p{
@@ -531,10 +532,9 @@ button, a{
     max-width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 15px 50px;
     display: block;
     margin: 0 auto;
-    
 }
 
 .slide.active {
@@ -588,10 +588,16 @@ button, a{
 
 /* endereço */
 .footer-address {
-  font-size: 0.95rem;
+  font-size: .9rem;
   line-height: 1.6;
+  text-align: center;
 }
 
+.footer-phone{
+    margin-top: 1.5rem;
+    margin-bottom: -1rem;
+    font-weight: bold;
+}
 /* telefone */
 .footer-phone a {
   color: #fff;
@@ -603,5 +609,5 @@ button, a{
   border-top: 2px solid var(--bg-main);
   padding: 1rem;
   text-align: center;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }

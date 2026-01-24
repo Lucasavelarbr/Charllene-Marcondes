@@ -32,35 +32,73 @@
     padding: 0;
 }
 
-.dislexia-section{
-    max-width: 90%;
-    margin: 3rem auto;
-    padding: 0;
-    text-align: center;
+.tod-section{
+    max-width: 100%;
+    margin: 4rem auto;
+    padding: 0 2rem;
 }
 
-.dislexia-img{
-    max-width: 85%;
-    margin: auto;
+.tea-image{
+    max-width: 100%;
+    margin: auto 2rem;
 }
 
-.dislexia-img img{
-    width: 85%;
+.tea-image img{
+    width: 100%;
     height: auto;
     border-radius: 15px 50px;
-    box-shadow: 0 0 15px -5px var(--text-muted);
+    box-shadow: 0 0 15px -5px var(--text-main);
     object-fit: cover;
     margin: 50px auto;
 }
 
-.dislexia-section h1{
+.tea-titulo{
+    text-align: center;
     font-size: 2rem;
     color: var(--title-main);
     font-weight: bold;
     margin-bottom: 50px;
 }
 
-.dislexia-section h1::after{
+.tea-titulo::after{
+    content: "";
+    display: block;
+    width: 70px;
+    height: 2px;
+    background-color: var(--title-main);
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.texto{
+    max-width: 100%;
+    margin: 0 auto 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: justify;
+    hyphens: auto;
+    color: var(--text-main);
+}
+
+.texto > span{
+    color: var(--title-main);
+    font-weight: bold;
+}
+
+.cards-container{
+    width: 100%;
+    margin: auto;
+}
+
+.cards-container h2{
+    font-size: 2rem;
+    color: var(--title-main);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.cards-container h2::after{
     content: "";
     display: block;
     width: 60px;
@@ -70,59 +108,14 @@
     border-radius: 2px;
 }
 
-.dislexia-section p{
-    text-align: justify;
-    font-size: 1rem;
-    font-weight: 600;
-    max-width: 85%;
-    margin: 0 auto 3rem;
-    hyphens: auto;
-}
-
-.dislexia-section p > span{
-    color: var(--title-main);
-    font-weight: bold;
-}
-
-.cards-container{
-    max-width: 90%;
-    margin: 4rem auto;
-    padding: 0 1rem;
-}
-
-#cards-titulo{
-    color: var(--title-main);
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-#cards-titulo::after{
-    content: "";
-    display: block;
-    width: 80px;
-    height: 2px;
-    background-color: var(--title-main);
-    margin: 10px auto;
-    border-radius: 2px;
-}
-
-.card-list{
-    list-style-type: none;
+.cards{
+    width: 100%;
+    margin: 0 auto;
 }
 
 .card{
+    width: 100%;
     background-color: var(--bg-main);
-    box-shadow:  0 0 15px -5px var(--text-main);
-    border-radius: 15px 50px;
-}
-
-.card h3{
-    font-size: 1.3rem;
-}
-
-.card p{
-    color: var(--text-main);
-    text-align: left;
-    hyphens: auto;
-    font-size: 1rem;
+    box-shadow: 0 0 20px -10px var(--text-main);
+    border-radius: 12px 50px;
 }
