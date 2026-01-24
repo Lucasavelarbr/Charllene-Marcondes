@@ -86,16 +86,22 @@
 
 .button{
     display: inline-block;
-    background-color: transparent;
-    font-weight: bold;
-    padding: 10px;
-    text-decoration: none;
-    font-size: 1.2rem;
+    background-color: var(--title-main);
     border-radius: 10px;
+    padding: 10px 20px;
     box-shadow: 0 0 15px -5px var(--text-muted);
+    margin-left: 15%;
+    margin-top: 40px;
 }
 
-.button:focus-visible{
+.button a{
+    text-decoration: none;
+    color: var(--bg-main);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.button a:focus-visible{
     outline: 3px solid var(--title-main); 
     outline-offset: 10px;
     border-radius: 4px;

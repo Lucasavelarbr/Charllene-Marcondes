@@ -118,6 +118,10 @@
         box-shadow: 0 0 50px -20px var(--text-muted);
     }
 
+    .areas{
+        margin: 0 auto;
+    }
+
     .areas li{
         position: relative;
         line-height: 4.4;
@@ -206,9 +210,220 @@
     .footer-bottom{
         font-size: 1.2rem;
     }
+
+    .footer-phone a:focus-visible{
+        outline: 3px solid var(--bg-main    ); 
+        outline-offset: 10px;
+        border-radius: 4px;
+    }
+
+
+
+    /* SOBRE CHARLLENE */
+
+    .sobre h1{
+        font-size: 3.5rem;
+        margin-top: 100px;
+    }
+
+    .sobre h1::after{
+        width: 120px;
+        height: 3px;
+    }
+
+    .sobre-imagem img{
+        width: 50%;
+        margin-left: 23%;
+        margin-top: 50px;
+    }
+
+    .sobre-texto > p{
+        font-size: 1.4rem;
+        max-width: 80%;
+        text-align: justify;
+        margin-left: 60px;
+    }
+
+    .button{
+        font-size: 1.6rem;
+        margin-left: 30%;
+        margin-top: 60px;
+        background-color: var(--title-main);
+    }
+
+    .button a{
+        color: var(--bg-main);
+        padding: 20px 40px;
+        text-decoration: none;
+        cursor: pointer;
+
+    }
+
+    .button a:focus-visible{
+        outline: 3px solid var(--title-main); 
+        outline-offset: 20px;
+        border-radius: 4px;
+    }
+
+    /* TDAH */
+
+    .tdah-image img{
+        width: 60%;
+        margin-top: 100PX;
+    }
+
+    .tdah-section h1{
+        font-size: 3REM;
+    }
+
+    .tdah-section h1::after{
+        width: 50px;
+        height: 4px;
+    }
+
+    .tdah-texto{
+        font-size: 1.5rem;
+        max-width: 80%;
+    }
+
+    .cards-container h2{
+        font-size: 2.2rem;
+    }
+
+    .cards-container h2::after{
+        width: 120px;
+        height: 4px;
+    }
+
+    /* AUTISMO  */
+
+    .autismo-image img{
+        width: 60%;
+        margin-top: 170px;
+    }
+
+    .autismo-section h1{
+        font-size: 3rem;
+    }
+
+    .autismo-section h1::after{
+        width: 120px;
+        height: 3px;
+    }
+
+    .texto p {
+        font-size: 1.6rem;
+        text-align: justify;
+        max-width: 80%;
+        margin-top: 60px;
+    }
+
+    .cards > h3{
+        font-size: 2.2rem;
+    }
+
+    .cards > h3::after{
+        width: 120px;
+        height: 3px;
+    }
+    
+    .cards-lista{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .card h4{
+        font-size: 1.5rem;
+        color: var(--title-main);
+    }
+
+    /* DISLEXIA */
+
+    .dislexia-img img{
+        width: 70%;
+        border-radius: 20px 70px;
+        margin-top: 100px;
+    }
+
+    .dislexia-section h1{
+        font-size: 3rem;
+    }
+
+    .dislexia-section h1::after{
+        width: 90px;
+        height: 4px;
+    }
+
+    .dislexia-section p {
+        font-size: 1.6rem;
+    }
+
+    #cards-titulo{
+        font-size: 2.5rem;
+    }
+
+    .card{
+        border-radius: 20px 60px;
+        margin: 80px auto;
+        box-shadow:  0 0 20px -10px var(--text-main);
+    }
+
+    .card p{
+        text-align: justify;
+        hyphens: auto;
+        font-size: 1.4rem;
+    }
+
+    /* TEA / TOD */
+
+    .tea-image img{
+        width: 60%;
+        margin-left: 19%;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    .tea-titulo{
+        font-size: 3rem;
+    }
+
+    .texto{
+        font-size: 1.5rem;
+        max-width: 80%;
+    }
+
+    .cards-container h2{
+        font-size: 2.2rem;
+        margin-top: 100px;
+    }
+
+    .cards-container h2::after{
+        width: 120px;
+        height: 2px;
+    }
+
+    .card{
+        border-radius: 20px 70px;
+    }
+
+    .card h3{
+        font-size: 1.7rem;
+    }
+
+    .card p{
+        font-size: 1.3rem;
+        padding: 40px;
+        text-align: left;
+    }
+
+
 }
 
 @media (min-width: 920px) {
+    
+    /* NAVBAR */
+
     .menu-toggle {
         display: none;
     }
@@ -245,4 +460,100 @@
         top: 10px;
         left: 20px;
     }
+
+
+    /* INICIO */
+
+    .hero-site{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-site img{
+        width: 70%;
+        margin-left: 100px;
+        margin-top: 90px;
+        border-radius: 30px 100px;
+    }
+
+    .hero-content{
+        margin-right: 10%;
+        margin-top: 40px;  
+    }
+
+    .hero-content h1{
+        text-align: left;
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+
+    .hero-content p{
+        font-size: 1.4rem;
+        text-align: justify;
+        hyphens: auto;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .hero-button{
+        font-size: 1.5rem;
+        padding: 20px 40px;
+    }
+
+    .sobre h2{
+        font-size: 3rem;
+        margin-top: 100px;
+    }
+
+    .sobre h2::after{
+        width: 120px;
+        height: 3px;
+    }
+
+    .areas{
+        max-width: 60%;
+        margin: 0 auto;
+    }
+
+    .areas li{
+        font-size: 1.7rem;
+        margin-top: 50px;
+        margin-left: 10px;
+        line-height: 3.4;
+    }
+
+    .sobre-areas img{
+        width: 30%;
+        margin-left: 100px;
+        margin-top: 50px;
+    }
+
+    .btn-sobre{
+        max-width: 50%;
+        font-size: 1.8rem;
+        margin-left: 25%;
+        margin-top: 80px;
+        padding: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+
+    .redes-sociais{
+        font-size: 3.5rem ;
+        margin-top: 5rem;
+    }
+
+    .carrocel-tittle{
+        font-size: 3rem;
+        margin-top: 3rem;
+    }
+
+    .carrocel-tittle::after{
+        width: 150px;
+        height: 4px;
+        margin-top: 1rem;
+    }
+
+    
+
 }

@@ -286,15 +286,7 @@ button, a{
     color: var(--primary-hover);
 }
 
-.areas li::before{
-    content: "•";
-    position: absolute;
-    left: -25%;             
-    top: 50%;
-    transform: translateY(-50%);
-    color: var(--primary-hover);
-    font-size: 1.4rem;
-}
+
 
 .sobre-areas img{
     width: 130px;
