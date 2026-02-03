@@ -186,6 +186,9 @@ const nextBtnGaleria = document.querySelector(".galeria-btn.next");
 let galeriaSlides = Array.from(trackGaleria.children);
 const galeriaGap = 25;
 
+// =============================
+// CLONES PARA LOOP INFINITO
+// =============================
 
 const galeriaFirstClone = galeriaSlides[0].cloneNode(true);
 const galeriaLastClone = galeriaSlides[galeriaSlides.length - 1].cloneNode(true);
@@ -195,16 +198,22 @@ trackGaleria.insertBefore(galeriaLastClone, galeriaSlides[0]);
 
 galeriaSlides = Array.from(trackGaleria.children);
 
-// Começa no primeiro slide REAL
+// Começa no primeiro REAL
 let galeriaIndex = 1;
 
 
+// =============================
+// FUNÇÃO PRINCIPAL
+// =============================
+
 function updateGaleria(animate = true) {
+
     const container = document.querySelector(".galeria-fotos");
     const containerWidth = container.offsetWidth;
     const itemWidth = galeriaSlides[0].offsetWidth;
 
     const centerOffset = (containerWidth - itemWidth) / 2;
+
     const totalTranslate =
         (galeriaIndex * (itemWidth + galeriaGap)) - centerOffset;
 
@@ -214,13 +223,22 @@ function updateGaleria(animate = true) {
 
     trackGaleria.style.transform = `translateX(${-totalTranslate}px)`;
 
+    // classes visuais
     galeriaSlides.forEach((slide, i) => {
         slide.classList.remove("active", "side");
-        if (i === galeriaIndex) slide.classList.add("active");
-        else slide.classList.add("side");
+
+        if (i === galeriaIndex) {
+            slide.classList.add("active");
+        } else {
+            slide.classList.add("side");
+        }
     });
 }
 
+
+// =============================
+// BOTÕES
+// =============================
 
 nextBtnGaleria.addEventListener("click", () => {
     galeriaIndex++;
@@ -233,36 +251,44 @@ prevBtnGaleria.addEventListener("click", () => {
 });
 
 
+// =============================
+// LOOP INFINITO IMPERCEPTÍVEL
+// =============================
+
 trackGaleria.addEventListener("transitionend", () => {
 
-  // Último clone → primeiro real
-  if (galeriaIndex === galeriaSlides.length - 1) {
-    galeriaIndex = 1;
+    // chegou no clone do primeiro
+    if (galeriaIndex === galeriaSlides.length - 1) {
 
-    trackGaleria.style.transition = "none";
-    updateGaleria(false);
+        galeriaIndex = 1;
 
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
+        trackGaleria.style.transition = "none";
+        updateGaleria(false);
+
+        // força reflow (segredo da suavidade)
+        trackGaleria.offsetHeight;
+
         trackGaleria.style.transition = "transform 0.4s ease";
-      });
-    });
-  }
+    }
 
-  // Primeiro clone → último real
-  if (galeriaIndex === 0) {
-    galeriaIndex = galeriaSlides.length - 2;
+    // chegou no clone do último
+    if (galeriaIndex === 0) {
 
-    trackGaleria.style.transition = "none";
-    updateGaleria(false);
+        galeriaIndex = galeriaSlides.length - 2;
 
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
+        trackGaleria.style.transition = "none";
+        updateGaleria(false);
+
+        trackGaleria.offsetHeight;
+
         trackGaleria.style.transition = "transform 0.4s ease";
-      });
-    });
-  }
+    }
 });
+
+
+// =============================
+// TOUCH (SWIPE)
+// =============================
 
 let galeriaTouchInicioX = 0;
 
@@ -271,15 +297,22 @@ trackGaleria.addEventListener("touchstart", e => {
 });
 
 trackGaleria.addEventListener("touchend", e => {
+
     const touchFimX = e.changedTouches[0].clientX;
     const diferenca = galeriaTouchInicioX - touchFimX;
 
     if (Math.abs(diferenca) > 50) {
-        if (diferenca > 0) galeriaIndex++;
-        else galeriaIndex--;
+
+        if (diferenca > 0) {
+            galeriaIndex++;
+        } else {
+            galeriaIndex--;
+        }
+
         updateGaleria();
     }
 });
+
 
 window.addEventListener("load", () => updateGaleria(false));
 window.addEventListener("resize", () => updateGaleria(false));

@@ -9,7 +9,7 @@
   --primary-hover: #4f8ea6;
 
   /* Títulos */
-  --title-main: #4f7f12;
+  --title-main: #1a470f;
   --title-secondary: #6fa83a;
 
   /* Texto */
@@ -283,7 +283,7 @@ button, a{
     line-height: 3.4;
     font-size: .8rem;
     font-weight: bold;
-    color: var(--primary-hover);
+    color: var(--title-main);
 }
 
 
@@ -320,11 +320,15 @@ button, a{
     text-align: center;
     margin-top: 20px;
     font-size: 2rem;
+    hyphens: none;
+    display: flex;
+    justify-content: center;
 }
 
 .redes-sociais a{
-    color: #4f7f12;
+    color: var(--title-main);
     padding: 0 20px;
+    hyphens: none;
     
 }
 
@@ -438,7 +442,7 @@ button, a{
     min-width: 10px;
     min-height: 10px;
     border-radius: 50%;
-    border: 2px solid #2e7d32;
+    border: 2px solid var(--title-main);
     background-color: transparent;
     padding: 0;
     margin: 0;
@@ -501,7 +505,7 @@ button, a{
 .galeria-fotos{
     position: relative;
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
     margin-top: 1rem;
     
 }
@@ -511,16 +515,16 @@ button, a{
     gap: 25px;
     transition: transform .5s ease-in-out;
     will-change: transform;
-    width: max-content;
+    width: 100%;
 }
 
 .slide{
-    flex: 0 0 80vw;
+    flex: 0 0 70vw;
     transition: transform .4s ease-in-out, filter .4s ease-in-out, opacity .4s ease-in-out;
 }
 
 .slide img{
-    width: 100%;
+    width: 80%;
     max-width: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -552,19 +556,20 @@ button, a{
     border: none;
     z-index: 4;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .galeria-btn.prev { left: 1px; }
 .galeria-btn.next { right: 1px; }
 
 .galeria-btn:focus-visible {
-  outline: 3px solid #4f7f12;
+  outline: 3px solid var(--title-main);
   outline-offset: 4px;
   border-radius: 4px;
 }
 
 .footer {
-  background-color: #3e8e2d;
+  background-color: var(--title-main);
   color: #fff;
 }
 
