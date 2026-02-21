@@ -6,6 +6,8 @@ const openMenu = () =>{
     navList.classList.add("active")
     menuToggle.classList.add("active")
     overlay.classList.add("active")
+    navList.removeAttribute("hidden")
+    navList.removeAttribute("inert")
     menuToggle.setAttribute("aria-expanded", "true")
 }
 
@@ -13,6 +15,8 @@ const closeMenu = () =>{
     navList.classList.remove("active")
     menuToggle.classList.remove("active")
     overlay.classList.remove("active")
+    navList.setAttribute("hidden")
+    navList.setAttribute("inert")
     menuToggle.setAttribute("aria-expanded", "true")
 }
 

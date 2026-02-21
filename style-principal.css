@@ -474,7 +474,7 @@ button, a{
 
 /* ======================================================================= */
 
-/* CARROCEL DE IMAGENS */
+/* IMAGENS */
 .espaço{
     padding: 4rem 1rem;
 }
@@ -503,77 +503,36 @@ button, a{
 }
 
 .galeria-fotos{
-    position: relative;
-    width: 100%;
-    overflow: visible;
-    margin-top: 1rem;
-    
+    margin-top: 5rem;
 }
 
-.galeria-track{
-    display: flex;
-    gap: 25px;
-    transition: transform .5s ease-in-out;
-    will-change: transform;
-    width: 100%;
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3%;
 }
 
 .slide{
-    flex: 0 0 70vw;
-    transition: transform .4s ease-in-out, filter .4s ease-in-out, opacity .4s ease-in-out;
+    width: 100%;
 }
 
 .slide img{
-    width: 80%;
-    max-width: 100%;
-    aspect-ratio: 1/1;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    border-radius: 15px 50px;
     display: block;
-    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 0 20px -5px var(--text-muted);
 }
 
-.slide.active {
-    opacity: 1;
-    transform: scale(1);
-    filter: none;
-}
-
-.slide.side {
-    opacity: .5;
-    transform: scale(.92);
-    filter: blur(4px);
-}
-
-.galeria-btn{
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color:#f8f9fab0 ;
-    color: var(--title-main);
-    font-size: 2.5rem;
-    padding: 10px;
-    border: none;
-    z-index: 4;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.galeria-btn.prev { left: 1px; }
-.galeria-btn.next { right: 1px; }
-
-.galeria-btn:focus-visible {
-  outline: 3px solid var(--title-main);
-  outline-offset: 4px;
-  border-radius: 4px;
-}
-
+/* footer */
 .footer {
   background-color: var(--title-main);
   color: #fff;
+  margin-top: 5rem;
 }
 
-/* 🔼 TOPO: duas colunas */
+/* TOPO: duas colunas */
 .footer-top {
   max-width: 1200px;
   margin: 0 auto;
@@ -585,9 +544,9 @@ button, a{
 
 /* endereço */
 .footer-address {
-  font-size: .9rem;
+  font-size: 1rem;
   line-height: 1.6;
-  text-align: center;
+  text-align: justify;
 }
 
 .footer-phone{
