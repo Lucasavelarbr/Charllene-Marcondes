@@ -45,8 +45,8 @@ document.addEventListener("keydown", (e) =>{
 // Clicar fora
 
 document.addEventListener("click", (e) =>{
-    const ClicknoMenu = navList.contains(e.targget)
-    const ClicknoBotao = menuToggle.contains(e.targget)
+    const ClicknoMenu = navList.contains(e.target)
+    const ClicknoBotao = menuToggle.contains(e.target)
 
     if(!ClicknoBotao && !ClicknoMenu){
         closeMenu()
@@ -320,3 +320,5 @@ trackGaleria.addEventListener("touchend", e => {
 
 window.addEventListener("load", () => updateGaleria(false));
 window.addEventListener("resize", () => updateGaleria(false));
+
+

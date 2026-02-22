@@ -188,9 +188,15 @@ button, a{
     border-radius: 15px 50px;
     object-fit: cover;
     display: block;
-    margin: 20px auto;
+    margin: 50px auto;
     box-shadow: 0 0 30px -10px var(--text-muted);
 }
+
+.efeito-img, .efeito-titulo, .efeito-p-topo, .efeito-botao-index{
+    visibility: hidden;
+}
+
+
 
 .hero-content{
     display: flex;
@@ -238,21 +244,28 @@ button, a{
     border-radius: 4px;
 }
 
-.sobre{
-    max-width: 95%;
-    margin: 0 auto;
-    padding: 2rem;
+.sobre-container{
+    max-width: 90%;
+    background-color: var(--bg-main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 5%;
+    box-shadow: 0 0 10px -5px var(--text-muted);
+    border-radius: 15px 50px;
+    margin-top: 2rem;
 }
 
-.sobre h2{
+.sobre-charllene h2{
     font-size: 1.7rem;
-    margin: 20px 0;
     text-align: center;
+    margin-top: 2rem;
     color: var(--title-main);
-    position: relative;
+    font-weight: bold;
 }
 
-.sobre h2::after{
+.sobre-charllene h2::after{
     content: "";
     display: block;
     width: 60px;
@@ -260,60 +273,15 @@ button, a{
     background-color: var(--title-main);
     margin: 12px auto 0;
     border-radius: 2px;
+    margin-bottom: 2rem;
 }
 
-.sobre-areas{
-    display: flex;
-    align-items: flex-start;
-    gap: 2rem;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.areas {
-    list-style-type: none;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.areas li{
-    position: relative;
-    line-height: 3.4;
-    font-size: .8rem;
-    font-weight: bold;
-    color: var(--title-main);
-}
-
-
-
-.sobre-areas img{
-    width: 130px;
-    height: auto;
-    margin-right: 25px;
-    background-color: var(--bg-main);
-    box-shadow: 0 0 10px -5px var(--text-muted);
-    border-radius: 20px 5px 5px 20px;
-    margin-bottom: 50px;
-}
-
-.btn-sobre{
-    display: block;
-    text-decoration: none;
-    margin: 50px;
-    text-align: center;
-    background-color: var(--title-main);
-    color: var(--bg-card);
-    padding: 10px 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px -5px var(--text-muted);;
-}
-
-.btn-sobre:focus-visible{
-    outline: 3px solid var(--title-main); 
-    outline-offset: 10px;
-    border-radius: 4px;
+.sobre-charllene p{
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 20px;
+    text-align: left;
+    margin-left: 10px;
 }
 
 .redes-sociais{
@@ -323,6 +291,7 @@ button, a{
     hyphens: none;
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
 }
 
 .redes-sociais a{
@@ -338,13 +307,21 @@ button, a{
     border-radius: 4px;
 }
 
+.efeito-sobre, .efeito-titulo2{
+    visibility: hidden;
+}
+
+.foto1, .foto2, .foto3, .foto4{
+    visibility: hidden;
+}
+
 /* ======================================================================= */
 
 /* ÁREA DO CARROCEL DE CARDS */
 .carrocel-tittle{
     font-size: 1.7rem;
     text-align: center;
-    margin: 20px auto;
+    margin-top: 100px;
     position: relative;
     color: var(--title-main);
 }
@@ -361,7 +338,7 @@ button, a{
 
 .carrocel{
     position: relative;
-    max-width: 80%;
+    max-width: 90%;
     margin: 1rem auto;
     overflow: hidden;
 }
@@ -374,6 +351,7 @@ button, a{
     padding: 0;
     margin: 0;
     transition: transform 0.5s ease-in-out;
+    
 }
 
 .card{
@@ -399,7 +377,7 @@ button, a{
 
 .carrocel-control{
     position: absolute;
-    top: 62%;
+    top: 65%;
     transform: translateY(-50%);
     z-index: 4;
     width: 45px;
@@ -503,13 +481,14 @@ button, a{
 }
 
 .galeria-fotos{
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
 
 .galeria{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1fr);
     gap: 3%;
+    margin-bottom: 100px;
 }
 
 .slide{
@@ -546,7 +525,7 @@ button, a{
 .footer-address {
   font-size: 1rem;
   line-height: 1.6;
-  text-align: justify;
+  text-align: center;
 }
 
 .footer-phone{
@@ -558,6 +537,13 @@ button, a{
 .footer-phone a {
   color: #fff;
   text-decoration: underline;
+}
+
+.footer-phone a:focus-visible{
+    outline: 3px solid var(--bg-card); 
+    outline-offset: 10px;
+    border-radius: 4px;
+
 }
 
 .footer-bottom {

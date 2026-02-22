@@ -24,7 +24,7 @@
     --box-shadow: 0 0 10px -5px var(--text-muted);
 }
 
-@media (min-width: 720px) and (max-width: 919px) {
+@media (min-width: 45rem) and (max-width: 57.438rem) {
     .logo {
         width: 90px;
         height: 70px;
@@ -74,15 +74,15 @@
     /* Àrea do Principal - INÍCIO */
 
     .hero-image img{
-        width: 55%;
+        width: 40%;
         height: auto;
-        margin: 40px auto;
+        margin: 70px auto 20px;
         border-radius: 20px 90px;
         box-shadow: 0 0 40px -20px var(--text-muted);
     }
 
     .hero-content h1{
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         max-width: 95%
     }   
 
@@ -99,44 +99,17 @@
         padding: 10px 20px;
     }
 
-    .sobre h2{
+    .sobre-container{
+        max-width: 80%;
+        margin: 100px auto 0;
+    }
+
+    .sobre-charllene h2{
         font-size: 2.5rem;
     }
 
-    .sobre h2::after{
-        display: block;
-        width: 120px;
-        height: 3px;
-    }
-
-    .sobre-areas img{
-        width: 250px;
-        height: auto;
-        margin-right: 25px;
-        margin-top: 40px;
-        border-radius: 40px 10px 10px 40px;
-        box-shadow: 0 0 50px -20px var(--text-muted);
-    }
-
-    .areas{
-        margin: 0 auto;
-    }
-
-    .areas li{
-        position: relative;
-        line-height: 4.4;
+    .sobre-charllene p{
         font-size: 1.5rem;
-        margin-left: 80px;
-        margin-top: 10px;
-
-    }
-
-    .btn-sobre{
-        max-width: 50%;
-        display: block;
-        margin: 20px auto;
-        font-size: 1.8rem;
-        font-weight: bold;
     }
 
     .redes-sociais{
@@ -158,8 +131,8 @@
         max-width: 80%;
     }
     .card{
-        max-width: 80%;
-        border-radius: 30px 90px;
+        max-width: 90%;
+        border-radius: 10px;
     }
 
     .card h3{
@@ -170,9 +143,14 @@
         font-size: 1.4rem;
     }
 
+    .carrocel-control{
+        width: 60px;
+        height: 60px;
+    }
+
     .nosso-espaço h3{
         font-size: 2.5rem;
-        margin: 100px auto;
+        margin: 80px auto;
     }
 
     .nosso-espaço h3::after{
@@ -181,20 +159,21 @@
         height: 3px;
     }
 
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     .galeria-fotos{
-        max-width: 90%;
+        max-width: 100%;
         display: block;
         margin: 0 auto;
     }
 
     .slide img{
-        max-width: 80%;
-        border-radius: 20px 90px;
+        width: 100%;
+        border-radius: 20px;
         margin-bottom: 100px;
-    }
-
-    .galeria-btn{
-        background-color: transparent;
     }
 
     .footer-address p{
@@ -218,52 +197,6 @@
     }
 
 
-
-    /* SOBRE CHARLLENE */
-
-    .sobre h1{
-        font-size: 3.5rem;
-        margin-top: 100px;
-    }
-
-    .sobre h1::after{
-        width: 120px;
-        height: 3px;
-    }
-
-    .sobre-imagem img{
-        width: 50%;
-        margin-left: 23%;
-        margin-top: 50px;
-    }
-
-    .sobre-texto > p{
-        font-size: 1.4rem;
-        max-width: 80%;
-        text-align: justify;
-        margin-left: 60px;
-    }
-
-    .button{
-        font-size: 1.6rem;
-        margin-left: 30%;
-        margin-top: 60px;
-        background-color: var(--title-main);
-    }
-
-    .button a{
-        color: var(--bg-main);
-        padding: 20px 40px;
-        text-decoration: none;
-        cursor: pointer;
-
-    }
-
-    .button a:focus-visible{
-        outline: 3px solid var(--title-main); 
-        outline-offset: 20px;
-        border-radius: 4px;
-    }
 
     /* TDAH */
 
@@ -356,6 +289,7 @@
     .cards-lista{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
 
     .card h4{
@@ -454,19 +388,20 @@
         font-weight: 900;
     }
 
-    .cards{
+    .cards-tod{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
     }
 
 
 }
 
-@media (min-width: 920px) {
+@media (min-width: 57.5rem) {
     
     /* NAVBAR */
 
-    .menu-toggle {
+    .menu-toggle{
         display: none;
     }
 
@@ -540,41 +475,9 @@
         padding: 10px 40px;
     }
 
-    .sobre h2{
-        font-size: 3rem;
-        margin-top: 100px;
-    }
-
-    .sobre h2::after{
-        width: 120px;
-        height: 2px;
-    }
-
-    .areas{
+    .sobre-container{
         max-width: 60%;
-        margin: 0 auto;
-    }
-
-    .areas li{
-        font-size: 1.2rem;
-        margin-top: 50px;
-        margin-left: -150px;
-        line-height: 2.5;
-    }
-
-    .sobre-areas img{
-        width: 20%;
-        margin-left: 250px;
-        margin-top: 50px;
-    }
-
-    .btn-sobre{
-        max-width: 50%;
-        font-size: 1rem;
-        margin-left: 25%;
-        padding: 10px 10px;
-        font-weight: bold;
-        border-radius: 10px;
+        margin: 100px auto;
     }
 
     .redes-sociais{
@@ -602,53 +505,23 @@
         max-width: 80%;
     }
 
+
+    .galeria{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
     .galeria-fotos{
-        max-width: 800px;
-        margin-left: 15%;
-        height: 60vh;
-        max-height: 500px;
+        max-width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .slide img{
+        width: 100%;
+        border-radius: 20px;
         margin-bottom: 100px;
     }
-
-    .galeria-track img {
-        width: 100%;
-        height: 60%;
-        object-fit: cover;
-}
-
-    .slide{
-        max-width: 500px;
-    }
-    
-/* SOBRE CHARLLENE */
-
-    .sobre h1{
-        text-align: center;
-        font-size: 2rem;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    .sobre-imagem img{
-        width: 25%;
-        margin-left: 100px;
-        float: left;
-        margin-right: 100px;
-    }
-
-    .sobre-texto > p{
-        font-size: 1rem;
-        max-width: 90%;
-        text-align: justify;
-        hyphens: auto;
-    }
-
-    .button{
-        margin-top: 20px;
-        margin-left: 58%;
-        margin-bottom: 50px;
-    }
-
 
     /* TDAH */
 
@@ -733,4 +606,84 @@
     .card p{
         font-weight: bold;
     }
+
+    /* DISLEXIA */
+
+    .dislexia-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        margin: 4rem auto;
+        padding: 0 1rem;
+        max-width: 80%;
+    }
+
+    .dislexia-img img{
+        width: 70%;
+        margin-top: 75px;
+    }
+
+    .dislexia-content h1{
+        margin-top: 30px;
+        font-size: 1.7rem;
+    }
+
+    .dislexia-content p{
+        font-size: 1rem;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        max-width: 900px;
+    }
+
+    #cards-titulo{
+        text-align: center;
+        margin-top: 30px ;
+    }
+
+    .card{
+        max-width: 60%;
+    }
+
+    .card p{
+        text-align: center;
+    }
+
+    /* TEA - TOD */
+
+    .tod-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        max-width: 80%;
+        margin: 4rem auto;
+        padding: 0 1rem;
+    }
+
+    .tea-image img{
+        width: 100%;
+        height: auto;
+    }
+
+    .tea-descrition{
+        max-width: 50%;
+    }
+
+    .tea-descrition h1{
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+
+    .texto-tea{
+        font-size: 1rem;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+    }
+
+    .cards-container h2{
+        margin-top: 0;
+    }
+
+ 
 }

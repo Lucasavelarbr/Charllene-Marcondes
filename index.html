@@ -22,6 +22,9 @@
 
     <!-- SWIPER -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    
+    <!-- Scroll reveal -->
+     <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>Charlene Marcondes - Psicopedagogia</title>
 </head>
@@ -39,9 +42,8 @@
                 <span class="bar" aria-hidden="true"></span>
             </button>
 
-            <ul class="nav-list" id="nav-list" inert hidden">
+            <ul class="nav-list" id="nav-list">
                 <li><a href="index.html">Início</a></li>
-                <li><a href="sobre.html">Sobre Charllene</a></li>
                 <li><a href="TDAH.html">TDAH</a></li>
                 <li><a href="AUTISMO.html">Autismo</a></li>
                 <li><a href="DISLEXIA.html">Dislexia</a></li>
@@ -55,45 +57,50 @@
     <main>
         <section class="hero-site" aria-labelledby="hero-title">
 
-            <div class="hero-image">
-                <img src="IMG/psicopedagogia-charllene-marcondes-aprendizado-infantil.jpg" alt="Fotografia de uma criança pequena sorrindo enquanto organiza cubos com letras sobre uma mesa de madeira. Ao lado, há um ábaco colorido. 
-                O cenário é uma sala de estudos suavemente iluminada pela luz da janela." role="presentation">
-            </div>
+            <div class="hero-image efeito-img">
+                <img src="IMG/Charllene.jpg" alt="Sou uma mulher adulta de pele clara, com cabelos longos castanho-claros com mechas loiras, lisos e soltos. Uso óculos de armação preta e brincos pequenos dourados. Estou sorrindo levemente e olhando para a câmera. Visto blusa vermelha e jaleco branco com a logo da clínica (a mesma do site).
+                Estou sentada atrás de uma mesa clara, com as mãos apoiadas uma sobre a outra. Ao fundo, meu consultório tem decoração suave em tons claros, com quadros infantis na parede, estante com livros e objetos e iluminação acolhedora." role="presentation">
+            </div> 
 
             <div class="hero-content">
-                <h1 id="hero-site">O suporte especializado que seu filho precisa para aprender melhor.</h1>
+                <h1 id="hero-site" class="efeito-titulo">O suporte especializado que seu filho precisa para aprender melhor.</h1>
 
-                <p>
+                <p class="efeito-p-topo">
                     Na clínica de <span>Charllene Marcondes</span>, cada criança é única. Unimos afeto e ciência para
                     destravar o potencial de aprendizagem do seu filho,
                     construindo um caminho de autonomia e confiança.
                 </p>
 
-                <a href="https://wa.me/5511949301565" class="hero-button" target="_blank">Entre em contato</a>
+                <a href="https://wa.me/5511949301565" class="hero-button efeito-botao-index" target="_blank">Entre em contato</a>
             </div>
         </section>
 
-        <section class="sobre">
-            <h2>
-                Charllene Marcondes
-            </h2>
-
-            <div class="sobre-areas">
-                <img src="IMG/foto-de-charllene.png" alt="
-                Eu sou uma mulher adulta de pele clara, cabelos longos e loiros, usando óculos. 
-                Estou em pé, sorrindo, vestindo um blazer marrom sobre uma blusa preta e uma calça 
-                preta. Ao meu lado há um totem azul do XIII Congresso Internacional Einstein de 
-                Neurologia e Neurociências, com a frase ‘Sejam bem-vindos’ e vários logotipos de 
-                empresas patrocinadoras. A foto foi tirada em um ambiente de congresso, 
-                transmitindo um clima profissional e acolhedor.
-            ">
-                <ul class="areas">
-                    <li>Psicopedagogia</li>
-                    <li>Autismo</li>
-                    <li>Terapia ABA</li>
-                    <li>Método Denver</li>
-                </ul>
-
+        <section class="sobre-container efeito-sobre">
+            <div class="sobre-charllene">
+                <h2>
+                    Charllene Marcondes
+                </h2>
+        
+                <p>
+                    Sou especializada em Educação Especial,
+                    com atuação voltada ao atendimento de crianças e adolescentes com Transtorno do 
+                    Espectro Autista, TDAH, TEA e outras dificuldades de aprendizagem.
+                </p>
+                <p>
+                    Tenho formação em Terapia ABA (Análise do Comportamento Aplicada) e
+                    capacitação no método Denver, utilizando estratégias baseadas em
+                    evidências científicas para promover aprendizagens significativas.
+                </p>
+                <p>
+                    Meu trabalho é pautado no respeito à individualidade, na escuta atenta
+                    e no fortalecimento da autonomia, da comunicação e das habilidades
+                    socioemocionais de cada criança.
+                </p>
+                <p>
+                    Acredito que, com o suporte adequado e um ambiente acolhedor, é possível
+                    potencializar o desenvolvimento e promover transformações significativas
+                    na vida de crianças e adolescentes.
+                </p>
             </div>
 
             <div class="redes-sociais">
@@ -106,13 +113,11 @@
                 </a>
             </div>
 
-            <a href="sobre.html" rel="noopener noreferrer" class="btn-sobre">Sobre Charllene</a>
-
         </section>
 
         <section class="carrocel" aria-roledescription="carrocel" aria-label="porquê procurar Psicopedagoga">
 
-            <h2 class="carrocel-tittle">Quando procurar uma Psicopedagoga</h2>
+            <h2 class="carrocel-tittle efeito-titulo2">Quando procurar uma Psicopedagoga</h2>
 
             <button class="carrocel-control prev" aria-label="Card anterior">
                 <i class="bi bi-caret-left"></i>
@@ -161,23 +166,23 @@
         <section class="espaço" aria-labelledby="espaco-titulo">
 
             <div class="nosso-espaço">
-                <h3>Nosso Espaço</h3>
+                <h3 class="efeito-titulo2">Nosso Espaço</h3>
 
                 <div class="galeria-fotos">
                     <div class="galeria">
-                        <figure class="slide">
+                        <figure class="slide foto1">
                             <img src="IMG/espaço-1.jpg" alt="Sala de atendimento acolhedora com sofá bege em L,
                          duas poltronas de madeira e iluminação indireta.">
                         </figure>
-                        <figure class="slide">
+                        <figure class="slide foto2">
                             <img src="IMG/espaço-2.jpg"
                                 alt="Espaço terapêutico infantil com tapete colorido, mesa infantil e prateleiras com brinquedos e livros.">
                         </figure>
-                        <figure class="slide">
+                        <figure class="slide foto3">
                             <img src="IMG/espaço-3.jpg"
                                 alt="Consultório com poltronas de madeira, mesa de atendimento e prateleiras decorativas na parede.">
                         </figure>
-                        <figure class="slide">
+                        <figure class="slide foto4">
                             <img src="IMG/espaço-4.jpg"
                                 alt="Recepção com balcão de madeira iluminado, cadeiras alinhadas, sofá verde e decoração minimalista.">
                         </figure>
@@ -211,6 +216,7 @@
     </main>
 
     <script src="script.js"></script>
+    <script src="scroll-reveal.js"></script>
 </body>
 
 </html>
