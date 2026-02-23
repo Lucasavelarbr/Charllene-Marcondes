@@ -44,7 +44,7 @@
 }
 
 .tea-image img{
-    width: 100%;
+    width: 0%;
     height: auto;
     border-radius: 15px 50px;
     box-shadow: 0 0 15px -5px var(--text-main);
@@ -91,7 +91,7 @@
 }
 
 .cards-container h2{
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: var(--title-main);
     font-weight: bold;
     text-align: center;
@@ -108,16 +108,31 @@
     border-radius: 2px;
 }
 
-.cards-tod{
-    width: 100%;
+.cards{
+    width: 85%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1fr);
 }
 
 .card{
-    width: 100%;
+    width: 80%;
     background-color: var(--bg-main);
     box-shadow: 0 0 20px -10px var(--text-main);
-    border-radius: 12px 50px;
+    border-radius: 12px;
+    margin: 30px auto;
+    padding: 30px;
 }
+
+.card h3{
+    color: var(--title-main);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card p{
+    text-align: center;
+    font-weight: 800;
+}
+
+

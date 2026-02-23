@@ -7,19 +7,21 @@
     <meta name="description" content="Página de Charllene Marvcondes - Psicopedagoga.">
 
     <!-- Links -->
-    <link rel="stylesheet" href="style-principal.css">
-    <link rel="stylesheet" href="style-sobre.css">
-    <link rel="stylesheet" href="DISLEXIA.css">
+    <link rel="stylesheet" href="../assets/pages.css/style-principal.css">
+    <link rel="stylesheet" href="../assets/pages.css/dislexia.css">
+    <link rel="stylesheet" href="../assets/responsivo.css">
 
     <!-- Icones-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="stylesheet" href="Responsivo.css">
 
     <!-- Fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+        <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 
     <title>DISLEXIA</title>
 </head>
@@ -27,7 +29,7 @@
 <body>
     <header>
         <nav class="navbar" aria-label="Navegação Principal">
-            <img src="IMG/logo.png" class="logo" alt="Logo com cérebro e folhas em tons de verde e azul">
+            <img src="../assets/IMG/logo.png" class="logo" alt="Logo com cérebro e folhas em tons de verde e azul">
 
             <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="nav-list"
                 aria-label="Abrir menu de navegação">
@@ -37,11 +39,11 @@
             </button>
 
             <ul class="nav-list" id="nav-list">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="TDAH.html">TDAH</a></li>
-                <li><a href="AUTISMO.css">Autismo</a></li>
-                <li><a href="DISLEXIA.html">Dislexia</a></li>
-                <li><a href="TOD.html">TEA - TOD</a></li>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="./tdah.html">TDAH</a></li>
+                <li><a href="./autismo.html">Autismo</a></li>
+                <li><a href="dislexia.html">Dislexia</a></li>
+                <li><a href="./tod.html">TEA - TOD</a></li>
             </ul>
         </nav>
     </header>
@@ -51,7 +53,7 @@
     <section class="dislexia-section" aria-labelledby="título-dislexia">
 
         <figure class="dislexia-img">
-            <img src="IMG/DISLEXIA.jpg" alt="Criança com expressão de confusão segurando um livro, com letras e 
+            <img src="../assets/IMG/DISLEXIA.jpg" alt="Criança com expressão de confusão segurando um livro, com letras e 
                 números embaralhados ao redor, representando dificuldades de leitura associadas à dislexia."
                 loading="lazy">
         </figure>
@@ -76,6 +78,12 @@
         </p>
     </div>
     </section>
+
+            <div class="section-divider" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
     <section>
         <h2 id="cards-titulo">Perguntas frequentes</h2>
@@ -136,7 +144,8 @@
                 © 2026 Charlene Marcondes. Todos os direitos reservados.
             </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script src="../assets/js/script.js"></script>
 </body>
 
 </html>

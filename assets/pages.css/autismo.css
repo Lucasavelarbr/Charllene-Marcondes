@@ -32,35 +32,37 @@
     padding: 0;
 }
 
-.dislexia-section{
+.autismo{
     max-width: 90%;
-    margin: 3rem auto;
-    padding: 0;
+    margin: 0 auto;
+    padding: 2rem 1rem;
     text-align: center;
 }
 
-.dislexia-img{
-    max-width: 85%;
-    margin: auto;
+.autismo-image{
+    max-width: 80%;
+    margin: 0 auto 2rem;
 }
 
-.dislexia-img img{
+.autismo-image img{
     width: 85%;
     height: auto;
+    display: block;
+    margin: 100px auto 0;
     border-radius: 15px 50px;
     box-shadow: 0 0 15px -5px var(--text-muted);
     object-fit: cover;
-    margin: 50px auto;
 }
 
-.dislexia-section h1{
+.autismo-section h1 {
     font-size: 2rem;
     color: var(--title-main);
+    text-align: center;
     font-weight: bold;
     margin-bottom: 50px;
 }
 
-.dislexia-section h1::after{
+.autismo-section h1::after{
     content: "";
     display: block;
     width: 60px;
@@ -70,59 +72,77 @@
     border-radius: 2px;
 }
 
-.dislexia-section p{
-    text-align: justify;
-    font-size: 1rem;
-    font-weight: 600;
-    max-width: 85%;
-    margin: 0 auto 3rem;
+.texto p{
+    max-width: 80%;
+    margin: 0 auto 2rem;
+    line-height: 1.3;
+    color: var(--text-main);
+    font-weight: 500;
+    text-align: left;
     hyphens: auto;
+    font-size: 1.2;
 }
 
-.dislexia-section p > span{
+.texto p > span{
     color: var(--title-main);
     font-weight: bold;
 }
 
-.cards-container{
-    max-width: 90%;
-    margin: 4rem auto;
-    padding: 0 1rem;
-}
-
-#cards-titulo{
+.cards > h3{
+    text-align: center;
+    font-size: 1.7rem;
     color: var(--title-main);
-    font-size: 1.5rem;
     font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
-#cards-titulo::after{
+.cards > h3::after{
     content: "";
     display: block;
-    width: 80px;
+    width: 60px;
     height: 2px;
     background-color: var(--title-main);
     margin: 10px auto;
     border-radius: 2px;
 }
 
-.card-list{
-    list-style-type: none;
+.cards-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  padding: 0;
+  list-style: none;
 }
 
-.card{
-    background-color: var(--bg-main);
-    box-shadow:  0 0 15px -5px var(--text-main);
-    border-radius: 15px 50px;
+.card {
+  background-color: var(--bg-main);
+  padding: 1.5rem;
+  border-radius: 15px;
+  outline: none;
+  box-shadow: 0 0 10px -5px var(--text-main);
+  max-width: 80%;
+  margin: 30px auto
 }
 
-.card h3{
-    font-size: 1.3rem;
+.card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--title-main);
+  text-align: center;
 }
 
-.card p{
-    color: var(--text-main);
-    text-align: left;
-    hyphens: auto;
-    font-size: 1rem;
+.card p {
+  font-size: 1rem;
+  text-align: center;
+  hyphens: auto;
+  max-width: 90%;
+  margin-left: 8%;
+  padding: 10px;
+  font-weight: 800;
 }
+
+
+.footer-container{
+    margin-top: 50px;
+}
+

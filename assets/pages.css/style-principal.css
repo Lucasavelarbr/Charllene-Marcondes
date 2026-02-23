@@ -183,20 +183,14 @@ button, a{
 }
 
 .hero-image img{
-    width: 80%;
+    width: 55%;
     height: auto;
     border-radius: 15px 50px;
     object-fit: cover;
     display: block;
-    margin: 50px auto;
+    margin: 30px auto;
     box-shadow: 0 0 30px -10px var(--text-muted);
 }
-
-.efeito-img, .efeito-titulo, .efeito-p-topo, .efeito-botao-index{
-    visibility: hidden;
-}
-
-
 
 .hero-content{
     display: flex;
@@ -206,7 +200,7 @@ button, a{
 }
 
 .hero-content h1{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.2;
     margin-bottom: 20px;
     text-align: center;
@@ -221,10 +215,6 @@ button, a{
     text-align: center;
 }
 
-.hero-content p > span{
-    color: #4f7f12;
-    font-weight: bold;
-}
 
 .hero-button{
     display: inline-block;
@@ -236,6 +226,22 @@ button, a{
     font-size: 1.2rem;
     border-radius: 10px;
     box-shadow: 0 0 15px -5px var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.section-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 60px 0;
+}
+
+.section-divider span {
+  width: 12px;
+  height: 12px;
+  background-color: var(--title-main);
+  border-radius: 50%;
 }
 
 .hero-button:focus-visible{
@@ -255,6 +261,7 @@ button, a{
     box-shadow: 0 0 10px -5px var(--text-muted);
     border-radius: 15px 50px;
     margin-top: 2rem;
+    margin-bottom: 150px;
 }
 
 .sobre-charllene h2{
@@ -307,21 +314,13 @@ button, a{
     border-radius: 4px;
 }
 
-.efeito-sobre, .efeito-titulo2{
-    visibility: hidden;
-}
-
-.foto1, .foto2, .foto3, .foto4{
-    visibility: hidden;
-}
-
 /* ======================================================================= */
 
 /* ÁREA DO CARROCEL DE CARDS */
 .carrocel-tittle{
     font-size: 1.7rem;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 0;
     position: relative;
     color: var(--title-main);
 }
@@ -339,7 +338,7 @@ button, a{
 .carrocel{
     position: relative;
     max-width: 90%;
-    margin: 1rem auto;
+    margin: 1rem auto 100px;
     overflow: hidden;
 }
 
@@ -355,7 +354,7 @@ button, a{
 }
 
 .card{
-    max-width: 100%;
+    max-width: 75%;
     background-color: var(--bg-main);
     padding: 1.5rem;
     border-radius: 15px;
@@ -377,7 +376,7 @@ button, a{
 
 .carrocel-control{
     position: absolute;
-    top: 65%;
+    top: 55%;
     transform: translateY(-50%);
     z-index: 4;
     width: 45px;
@@ -468,6 +467,7 @@ button, a{
     margin-bottom: 2rem;
     color: var(--title-main);
     font-weight: bold;
+    margin-top: -50px;
 }
 
 .nosso-espaço h3::after{
