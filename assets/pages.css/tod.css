@@ -44,12 +44,12 @@
 }
 
 .tea-image img{
-    width: 0%;
+    width: 100%;
     height: auto;
     border-radius: 15px 50px;
     box-shadow: 0 0 15px -5px var(--text-main);
     object-fit: cover;
-    margin: 50px auto;
+    margin: 50px AUTO;
 }
 
 .tea-titulo{
